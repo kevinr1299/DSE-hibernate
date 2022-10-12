@@ -37,7 +37,7 @@ public class Console {
 		System.out.print("Are you sure that you want to delete the student with id "+ id.toString() + "? (Y/n) ");
 		String answerd = buffer.readLine();
 		if(answerd.equalsIgnoreCase("y")) {
-			boolean deleted = sm.delete(id);
+			5boolean deleted = sm.delete(id);
 			if(deleted) {
 				System.out.println("Student deleted");
 			} else {
