@@ -10703,3 +10703,425 @@ Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protect
 2022-10-11 21:23:22 DEBUG Loader:1904 - done entity load
 2022-10-11 21:23:22 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
 2022-10-11 21:23:22 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 13:53:40  INFO Version:15 - Hibernate Annotations 3.4.0.GA
+2022-10-15 13:53:40  INFO Environment:543 - Hibernate 3.3.0.SP1
+2022-10-15 13:53:40  INFO Environment:576 - hibernate.properties not found
+2022-10-15 13:53:40  INFO Environment:709 - Bytecode provider name : javassist
+2022-10-15 13:53:40  INFO Environment:627 - using JDK 1.4 java.sql.Timestamp handling
+2022-10-15 13:53:40  INFO Version:14 - Hibernate Commons Annotations 3.1.0.GA
+2022-10-15 13:53:40  INFO Configuration:1460 - configuring from resource: /hibernate.cfg.xml
+2022-10-15 13:53:40  INFO Configuration:1437 - Configuration resource: /hibernate.cfg.xml
+2022-10-15 13:53:40 DEBUG DTDEntityResolver:64 - trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.connection.driver_class=org.postgresql.Driver
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.connection.url=jdbc:postgresql://localhost:5432/hibernate
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.connection.useUnicode=true
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.connection.characterEncoding=UTF-8
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.connection.username=dse
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.connection.password=123456
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.current_session_context_class=thread
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.hbm2ddl.auto=update
+2022-10-15 13:53:40 DEBUG Configuration:1421 - hibernate.format_sql=true
+2022-10-15 13:53:40 DEBUG AnnotationConfiguration:644 - null <- org.dom4j.tree.DefaultAttribute@564fabc8 [Attribute: name class value "com.dse.hibernate.Student"]
+2022-10-15 13:53:41  INFO Configuration:1575 - Configured SessionFactory: null
+2022-10-15 13:53:41 DEBUG Configuration:1576 - properties: {hibernate.format_sql=true, java.specification.version=17, sun.jnu.encoding=UTF-8, sun.arch.data.model=64, java.vendor.url=https://adoptium.net/, sun.boot.library.path=/snap/eclipse/61/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.3.v20220515-1416/jre/lib, sun.java.command=com.dse.hibernate.Console, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.version.date=2022-04-19, java.home=/snap/eclipse/61/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.3.v20220515-1416/jre, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.3+7, user.name=romero, file.encoding=UTF-8, java.vendor.version=Temurin-17.0.3+7, hibernate.current_session_context_class=thread, hibernate.connection.driver_class=org.postgresql.Driver, java.io.tmpdir=/tmp, java.version=17.0.3, java.vm.specification.name=Java Virtual Machine Specification, native.encoding=UTF-8, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Eclipse Adoptium, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.characterEncoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=/home/romero/eclipse-workspace/postgres-hibernate/target/classes:/home/romero/.m2/repository/hibernate/hibernate-entitymanager/3.4.0.GA/hibernate-entitymanager-3.4.0.GA.jar:/home/romero/.m2/repository/org/hibernate/ejb3-persistence/1.0.2.GA/ejb3-persistence-1.0.2.GA.jar:/home/romero/.m2/repository/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.jar:/home/romero/.m2/repository/org/hibernate/hibernate-annotations/3.4.0.GA/hibernate-annotations-3.4.0.GA.jar:/home/romero/.m2/repository/org/hibernate/hibernate-core/3.3.0.SP1/hibernate-core-3.3.0.SP1.jar:/home/romero/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/home/romero/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/romero/.m2/repository/org/slf4j/slf4j-api/1.4.2/slf4j-api-1.4.2.jar:/home/romero/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/romero/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/romero/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar:/home/romero/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar:/home/romero/.m2/repository/org/postgresql/postgresql/42.5.0/postgresql-42.5.0.jar:/home/romero/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/romero/.m2/repository/org/slf4j/slf4j-log4j12/1.4.2/slf4j-log4j12-1.4.2.jar:/home/romero/.m2/repository/log4j/log4j/1.2.13/log4j-1.2.13.jar:/home/romero/.m2/repository/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA.jar, java.vm.vendor=Eclipse Adoptium, user.timezone=America/El_Salvador, java.vm.specification.version=17, os.name=Linux, sun.java.launcher=SUN_STANDARD, user.country=US, sun.cpu.endian=little, user.home=/home/romero, user.language=en, hibernate.connection.useUnicode=true, path.separator=:, hibernate.connection.username=dse, os.version=5.15.0-50-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/hibernate, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, user.dir=/home/romero/eclipse-workspace/postgres-hibernate, os.arch=amd64, hibernate.connection.password=123456, java.vm.info=mixed mode, java.vm.version=17.0.3+7, hibernate.bytecode.use_reflection_optimizer=false, java.class.version=61.0}
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:806 - Validator not present in classpath, ignoring event listener registration
+2022-10-15 13:53:41 DEBUG HibernateSearchEventListenerRegister:209 - Search not present in classpath, ignoring event listener registration.
+2022-10-15 13:53:41  INFO HibernateSearchEventListenerRegister:53 - Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.
+2022-10-15 13:53:41 DEBUG Configuration:1318 - Preparing to build session factory with filters : {}
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:258 - Execute first pass mapping processing
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:529 - Process hbm files
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:537 - Process annotated classes
+2022-10-15 13:53:41  INFO AnnotationBinder:419 - Binding entity from annotated class: com.dse.hibernate.Student
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column DTYPE. Unique false. Nullable false.
+2022-10-15 13:53:41 DEBUG EntityBinder:295 - Import with entity name Student
+2022-10-15 13:53:41  INFO EntityBinder:422 - Bind entity com.dse.hibernate.Student on table students
+2022-10-15 13:53:41 DEBUG AnnotationBinder:372 - Add sequence generator with name: idgen
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1022 - Processing com.dse.hibernate.Student property annotation
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1022 - Processing com.dse.hibernate.Student field annotation
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1133 - Processing annotations of com.dse.hibernate.Student.student_id
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column student_id. Unique false. Nullable true.
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1257 - student_id is an id
+2022-10-15 13:53:41 DEBUG SimpleValueBinder:220 - building SimpleValue for student_id
+2022-10-15 13:53:41 DEBUG PropertyBinder:131 - Building property student_id
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1293 - Bind @Id on student_id
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1133 - Processing annotations of com.dse.hibernate.Student.code
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column code. Unique false. Nullable true.
+2022-10-15 13:53:41 DEBUG PropertyBinder:110 - binding property code with lazy=false
+2022-10-15 13:53:41 DEBUG SimpleValueBinder:220 - building SimpleValue for code
+2022-10-15 13:53:41 DEBUG PropertyBinder:131 - Building property code
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1133 - Processing annotations of com.dse.hibernate.Student.email
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column email. Unique false. Nullable true.
+2022-10-15 13:53:41 DEBUG PropertyBinder:110 - binding property email with lazy=false
+2022-10-15 13:53:41 DEBUG SimpleValueBinder:220 - building SimpleValue for email
+2022-10-15 13:53:41 DEBUG PropertyBinder:131 - Building property email
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1133 - Processing annotations of com.dse.hibernate.Student.name
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column name. Unique false. Nullable true.
+2022-10-15 13:53:41 DEBUG PropertyBinder:110 - binding property name with lazy=false
+2022-10-15 13:53:41 DEBUG SimpleValueBinder:220 - building SimpleValue for name
+2022-10-15 13:53:41 DEBUG PropertyBinder:131 - Building property name
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1133 - Processing annotations of com.dse.hibernate.Student.phone
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column phone. Unique false. Nullable true.
+2022-10-15 13:53:41 DEBUG PropertyBinder:110 - binding property phone with lazy=false
+2022-10-15 13:53:41 DEBUG SimpleValueBinder:220 - building SimpleValue for phone
+2022-10-15 13:53:41 DEBUG PropertyBinder:131 - Building property phone
+2022-10-15 13:53:41 DEBUG AnnotationBinder:1133 - Processing annotations of com.dse.hibernate.Student.surname
+2022-10-15 13:53:41 DEBUG Ejb3Column:161 - Binding column surname. Unique false. Nullable true.
+2022-10-15 13:53:41 DEBUG PropertyBinder:110 - binding property surname with lazy=false
+2022-10-15 13:53:41 DEBUG SimpleValueBinder:220 - building SimpleValue for surname
+2022-10-15 13:53:41 DEBUG PropertyBinder:131 - Building property surname
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:401 - processing fk mappings (*ToOne and JoinedSubclass)
+2022-10-15 13:53:41 DEBUG Configuration:1153 - processing extends queue
+2022-10-15 13:53:41 DEBUG Configuration:1157 - processing collection mappings
+2022-10-15 13:53:41 DEBUG Configuration:1168 - processing native query and ResultSetMapping mappings
+2022-10-15 13:53:41 DEBUG Configuration:1176 - processing association property references
+2022-10-15 13:53:41 DEBUG Configuration:1198 - processing foreign key constraints
+2022-10-15 13:53:41  INFO AnnotationConfiguration:369 - Hibernate Validator not found: ignoring
+2022-10-15 13:53:41  INFO DriverManagerConnectionProvider:64 - Using Hibernate built-in connection pool (not for production use!)
+2022-10-15 13:53:41  INFO DriverManagerConnectionProvider:65 - Hibernate connection pool size: 20
+2022-10-15 13:53:41  INFO DriverManagerConnectionProvider:68 - autocommit mode: false
+2022-10-15 13:53:41  INFO DriverManagerConnectionProvider:103 - using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/hibernate
+2022-10-15 13:53:41  INFO DriverManagerConnectionProvider:106 - connection properties: {password=123456, useUnicode=true, characterEncoding=UTF-8, user=dse}
+2022-10-15 13:53:41 DEBUG DriverManagerConnectionProvider:132 - opening new JDBC connection
+2022-10-15 13:53:41 DEBUG DriverManagerConnectionProvider:138 - created connection to: jdbc:postgresql://localhost:5432/hibernate, Isolation Level: 2
+2022-10-15 13:53:41  INFO SettingsFactory:116 - RDBMS: PostgreSQL, version: 14.5 (Ubuntu 14.5-0ubuntu0.22.04.1)
+2022-10-15 13:53:41  INFO SettingsFactory:117 - JDBC driver: PostgreSQL JDBC Driver, version: 42.5.0
+2022-10-15 13:53:41  INFO Dialect:175 - Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-10-15 13:53:41  INFO TransactionFactoryFactory:59 - Using default transaction strategy (direct JDBC transactions)
+2022-10-15 13:53:41  INFO TransactionManagerLookupFactory:80 - No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2022-10-15 13:53:41  INFO SettingsFactory:170 - Automatic flush during beforeCompletion(): disabled
+2022-10-15 13:53:41  INFO SettingsFactory:174 - Automatic session close at end of transaction: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:181 - JDBC batch size: 15
+2022-10-15 13:53:41  INFO SettingsFactory:184 - JDBC batch updates for versioned data: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:189 - Scrollable result sets: enabled
+2022-10-15 13:53:41 DEBUG SettingsFactory:193 - Wrap result sets: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:197 - JDBC3 getGeneratedKeys(): enabled
+2022-10-15 13:53:41  INFO SettingsFactory:205 - Connection release mode: auto
+2022-10-15 13:53:41  INFO SettingsFactory:232 - Default batch fetch size: 1
+2022-10-15 13:53:41  INFO SettingsFactory:236 - Generate SQL with comments: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:240 - Order SQL updates by primary key: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:244 - Order SQL inserts for batching: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:420 - Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2022-10-15 13:53:41  INFO ASTQueryTranslatorFactory:47 - Using ASTQueryTranslatorFactory
+2022-10-15 13:53:41  INFO SettingsFactory:252 - Query language substitutions: {}
+2022-10-15 13:53:41  INFO SettingsFactory:257 - JPA-QL strict compliance: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:262 - Second-level cache: enabled
+2022-10-15 13:53:41  INFO SettingsFactory:266 - Query cache: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:405 - Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+2022-10-15 13:53:41  INFO SettingsFactory:276 - Optimize cache for minimal puts: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:285 - Structured second-level cache entries: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:314 - Statistics: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:318 - Deleted entity synthetic identifier rollback: disabled
+2022-10-15 13:53:41  INFO SettingsFactory:333 - Default entity-mode: pojo
+2022-10-15 13:53:41  INFO SettingsFactory:337 - Named query checking : enabled
+2022-10-15 13:53:41  INFO SessionFactoryImpl:187 - building session factory
+2022-10-15 13:53:41 DEBUG SessionFactoryImpl:205 - Session factory constructed with filter configurations : {}
+2022-10-15 13:53:41 DEBUG SessionFactoryImpl:209 - instantiating session factory with properties: {hibernate.format_sql=true, java.specification.version=17, sun.jnu.encoding=UTF-8, sun.arch.data.model=64, java.vendor.url=https://adoptium.net/, sun.boot.library.path=/snap/eclipse/61/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.3.v20220515-1416/jre/lib, sun.java.command=com.dse.hibernate.Console, jdk.debug=release, java.specification.vendor=Oracle Corporation, java.version.date=2022-04-19, java.home=/snap/eclipse/61/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.3.v20220515-1416/jre, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=17.0.3+7, user.name=romero, file.encoding=UTF-8, java.vendor.version=Temurin-17.0.3+7, hibernate.current_session_context_class=thread, hibernate.connection.driver_class=org.postgresql.Driver, java.io.tmpdir=/tmp, java.version=17.0.3, java.vm.specification.name=Java Virtual Machine Specification, native.encoding=UTF-8, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Eclipse Adoptium, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.characterEncoding=UTF-8, hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect, java.class.path=/home/romero/eclipse-workspace/postgres-hibernate/target/classes:/home/romero/.m2/repository/hibernate/hibernate-entitymanager/3.4.0.GA/hibernate-entitymanager-3.4.0.GA.jar:/home/romero/.m2/repository/org/hibernate/ejb3-persistence/1.0.2.GA/ejb3-persistence-1.0.2.GA.jar:/home/romero/.m2/repository/org/hibernate/hibernate-commons-annotations/3.1.0.GA/hibernate-commons-annotations-3.1.0.GA.jar:/home/romero/.m2/repository/org/hibernate/hibernate-annotations/3.4.0.GA/hibernate-annotations-3.4.0.GA.jar:/home/romero/.m2/repository/org/hibernate/hibernate-core/3.3.0.SP1/hibernate-core-3.3.0.SP1.jar:/home/romero/.m2/repository/antlr/antlr/2.7.6/antlr-2.7.6.jar:/home/romero/.m2/repository/commons-collections/commons-collections/3.1/commons-collections-3.1.jar:/home/romero/.m2/repository/org/slf4j/slf4j-api/1.4.2/slf4j-api-1.4.2.jar:/home/romero/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/home/romero/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/home/romero/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar:/home/romero/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar:/home/romero/.m2/repository/org/postgresql/postgresql/42.5.0/postgresql-42.5.0.jar:/home/romero/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/home/romero/.m2/repository/org/slf4j/slf4j-log4j12/1.4.2/slf4j-log4j12-1.4.2.jar:/home/romero/.m2/repository/log4j/log4j/1.2.13/log4j-1.2.13.jar:/home/romero/.m2/repository/org/javassist/javassist/3.18.0-GA/javassist-3.18.0-GA.jar, java.vm.vendor=Eclipse Adoptium, user.timezone=America/El_Salvador, java.vm.specification.version=17, os.name=Linux, sun.java.launcher=SUN_STANDARD, user.country=US, sun.cpu.endian=little, user.home=/home/romero, user.language=en, hibernate.connection.useUnicode=true, path.separator=:, hibernate.connection.username=dse, os.version=5.15.0-50-generic, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/hibernate, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, user.dir=/home/romero/eclipse-workspace/postgres-hibernate, os.arch=amd64, hibernate.connection.password=123456, java.vm.info=mixed mode, java.vm.version=17.0.3+7, hibernate.bytecode.use_reflection_optimizer=false, java.class.version=61.0}
+2022-10-15 13:53:41 ERROR BasicLazyInitializer:165 - Javassist Enhancement failed: com.dse.hibernate.Student
+java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @33afa13b
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193)
+	at javassist.util.proxy.FactoryHelper.toClass2(FactoryHelper.java:176)
+	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:159)
+	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:337)
+	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:312)
+	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:271)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:162)
+	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:66)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:183)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:158)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:76)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.<init>(EntityEntityModeToTuplizerMapping.java:80)
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:325)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:457)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:131)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:84)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:261)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at com.dse.hibernate.StudentManager.<init>(StudentManager.java:17)
+	at com.dse.hibernate.Console.main(Console.java:109)
+2022-10-15 13:53:41  WARN PojoEntityTuplizer:195 - could not create proxy factory for:com.dse.hibernate.Student
+org.hibernate.HibernateException: Javassist Enhancement failed: com.dse.hibernate.Student
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:169)
+	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:66)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:183)
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:158)
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:76)
+	at org.hibernate.tuple.entity.EntityEntityModeToTuplizerMapping.<init>(EntityEntityModeToTuplizerMapping.java:80)
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:325)
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:457)
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:131)
+	at org.hibernate.persister.PersisterFactory.createClassPersister(PersisterFactory.java:84)
+	at org.hibernate.impl.SessionFactoryImpl.<init>(SessionFactoryImpl.java:261)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1327)
+	at org.hibernate.cfg.AnnotationConfiguration.buildSessionFactory(AnnotationConfiguration.java:867)
+	at com.dse.hibernate.StudentManager.<init>(StudentManager.java:17)
+	at com.dse.hibernate.Console.main(Console.java:109)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @33afa13b
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193)
+	at javassist.util.proxy.FactoryHelper.toClass2(FactoryHelper.java:176)
+	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:159)
+	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:337)
+	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:312)
+	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:271)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:162)
+	... 14 more
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2766 - Static SQL for entity: com.dse.hibernate.Student
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2771 -  Version select: select student_id from students where student_id =?
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2774 -  Snapshot select: select student_.student_id, student_.code as code0_, student_.email as email0_, student_.name as name0_, student_.phone as phone0_, student_.surname as surname0_ from students student_ where student_.student_id=?
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2777 -  Insert 0: insert into students (code, email, name, phone, surname, student_id) values (?, ?, ?, ?, ?, ?)
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2778 -  Update 0: update students set code=?, email=?, name=?, phone=?, surname=? where student_id=?
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2779 -  Delete 0: delete from students where student_id=?
+2022-10-15 13:53:41 DEBUG AbstractEntityPersister:2783 -  Identity insert: insert into students (code, email, name, phone, surname) values (?, ?, ?, ?, ?)
+2022-10-15 13:53:41 DEBUG EntityLoader:102 - Static select for entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=?
+2022-10-15 13:53:41 DEBUG EntityLoader:102 - Static select for entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=?
+2022-10-15 13:53:41 DEBUG EntityLoader:102 - Static select for entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=? for update
+2022-10-15 13:53:41 DEBUG EntityLoader:102 - Static select for entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=? for update
+2022-10-15 13:53:41 DEBUG EntityLoader:102 - Static select for entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=? for update
+2022-10-15 13:53:41 DEBUG EntityLoader:57 - Static select for action ACTION_MERGE on entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=?
+2022-10-15 13:53:41 DEBUG EntityLoader:57 - Static select for action ACTION_REFRESH on entity com.dse.hibernate.Student: select student0_.student_id as student1_0_0_, student0_.code as code0_0_, student0_.email as email0_0_, student0_.name as name0_0_, student0_.phone as phone0_0_, student0_.surname as surname0_0_ from students student0_ where student0_.student_id=?
+2022-10-15 13:53:41 DEBUG SessionFactoryObjectFactory:62 - initializing class SessionFactoryObjectFactory
+2022-10-15 13:53:41 DEBUG SessionFactoryObjectFactory:99 - registered: ff80818183dd359c0183dd359c8d0000 (unnamed)
+2022-10-15 13:53:41  INFO SessionFactoryObjectFactory:105 - Not binding factory to JNDI, no JNDI name configured
+2022-10-15 13:53:41 DEBUG SessionFactoryImpl:340 - instantiated session factory
+2022-10-15 13:53:41  INFO SchemaUpdate:138 - Running hbm2ddl schema update
+2022-10-15 13:53:41  INFO SchemaUpdate:149 - fetching database metadata
+2022-10-15 13:53:41  INFO SchemaUpdate:161 - updating schema
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:258 - Execute first pass mapping processing
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:529 - Process hbm files
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:537 - Process annotated classes
+2022-10-15 13:53:41 DEBUG AnnotationConfiguration:401 - processing fk mappings (*ToOne and JoinedSubclass)
+2022-10-15 13:53:41 DEBUG Configuration:1153 - processing extends queue
+2022-10-15 13:53:41 DEBUG Configuration:1157 - processing collection mappings
+2022-10-15 13:53:41 DEBUG Configuration:1168 - processing native query and ResultSetMapping mappings
+2022-10-15 13:53:41 DEBUG Configuration:1176 - processing association property references
+2022-10-15 13:53:41 DEBUG Configuration:1198 - processing foreign key constraints
+2022-10-15 13:53:41  INFO TableMetadata:62 - table found: public.students
+2022-10-15 13:53:41  INFO TableMetadata:63 - columns: [code, phone, surname, name, student_id, email]
+2022-10-15 13:53:41  INFO TableMetadata:65 - foreign keys: []
+2022-10-15 13:53:41  INFO TableMetadata:66 - indexes: [students_code_key, students_email_key, students_pkey]
+2022-10-15 13:53:41  INFO SchemaUpdate:183 - schema update complete
+2022-10-15 13:53:41 DEBUG SessionFactoryImpl:426 - Checking 0 named HQL queries
+2022-10-15 13:53:41 DEBUG SessionFactoryImpl:446 - Checking 0 named SQL queries
+2022-10-15 13:53:41 DEBUG SessionImpl:247 - opened session at timestamp: 16658636218
+2022-10-15 14:00:18 DEBUG QueryTranslatorImpl:269 - parse() - HQL: select _s from com.dse.hibernate.Student _s
+2022-10-15 14:00:18 DEBUG AST:289 - --- HQL AST ---
+ \-[QUERY] 'query'
+    \-[SELECT_FROM] 'SELECT_FROM'
+       +-[FROM] 'from'
+       |  \-[RANGE] 'RANGE'
+       |     +-[DOT] '.'
+       |     |  +-[DOT] '.'
+       |     |  |  +-[DOT] '.'
+       |     |  |  |  +-[IDENT] 'com'
+       |     |  |  |  \-[IDENT] 'dse'
+       |     |  |  \-[IDENT] 'hibernate'
+       |     |  \-[IDENT] 'Student'
+       |     \-[ALIAS] '_s'
+       \-[SELECT] 'select'
+          \-[IDENT] '_s'
+
+2022-10-15 14:00:18 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+2022-10-15 14:00:18 DEBUG HqlSqlBaseWalker:111 - select << begin [level=1, statement=select]
+2022-10-15 14:00:18 DEBUG FromElement:129 - FromClause{level=1} :  com.dse.hibernate.Student (_s) -> student0_
+2022-10-15 14:00:18 DEBUG FromReferenceNode:74 - Resolved :  _s -> student0_.student_id
+2022-10-15 14:00:18 DEBUG HqlSqlBaseWalker:117 - select : finishing up [level=1, statement=select]
+2022-10-15 14:00:18 DEBUG HqlSqlWalker:531 - processQuery() :  ( SELECT ( {select clause} student0_.student_id ) ( FromClause{level=1} students student0_ ) )
+2022-10-15 14:00:18 DEBUG JoinProcessor:171 - Using FROM fragment [students student0_]
+2022-10-15 14:00:18 DEBUG HqlSqlBaseWalker:123 - select >> end [level=1, statement=select]
+2022-10-15 14:00:18 DEBUG AST:255 - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (students)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'student0_.student_id as student1_0_' {alias=_s, className=com.dse.hibernate.Student, tableAlias=student0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'student0_.code as code0_, student0_.email as email0_, student0_.name as name0_, student0_.phone as phone0_, student0_.surname as surname0_'
+    \-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[_s], fromElementByTableAlias=[student0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+       \-[FROM_FRAGMENT] FromElement: 'students student0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=_s,role=null,tableName=students,tableAlias=student0_,origin=null,colums={,className=com.dse.hibernate.Student}}
+
+2022-10-15 14:00:18 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+2022-10-15 14:00:18 DEBUG QueryTranslatorImpl:239 - HQL: select _s from com.dse.hibernate.Student _s
+2022-10-15 14:00:18 DEBUG QueryTranslatorImpl:240 - SQL: select student0_.student_id as student1_0_, student0_.code as code0_, student0_.email as email0_, student0_.name as name0_, student0_.phone as phone0_, student0_.surname as surname0_ from students student0_
+2022-10-15 14:00:18 DEBUG ErrorCounter:91 - throwQueryException() : no errors
+2022-10-15 14:00:18 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:00:18 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:00:18 DEBUG SQL:111 - 
+    select
+        student0_.student_id as student1_0_,
+        student0_.code as code0_,
+        student0_.email as email0_,
+        student0_.name as name0_,
+        student0_.phone as phone0_,
+        student0_.surname as surname0_ 
+    from
+        students student0_
+2022-10-15 14:00:18 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+2022-10-15 14:00:18 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+2022-10-15 14:00:18 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:00:18 DEBUG StatefulPersistenceContext:860 - initializing non-lazy collections
+2022-10-15 14:00:18 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:00:18 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:00:39 DEBUG JDBCTransaction:82 - begin
+2022-10-15 14:00:39 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:00:39 DEBUG JDBCTransaction:87 - current autocommit status: false
+2022-10-15 14:00:39 DEBUG AbstractSaveEventListener:320 - executing identity-insert immediately
+2022-10-15 14:00:39 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:00:39 DEBUG SQL:111 - 
+    insert 
+    into
+        students
+        (code, email, name, phone, surname) 
+    values
+        (?, ?, ?, ?, ?)
+2022-10-15 14:00:39 DEBUG IdentifierGeneratorFactory:95 - Natively generated identity: 2
+2022-10-15 14:00:39 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:00:39 DEBUG JDBCTransaction:134 - commit
+2022-10-15 14:00:39 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+2022-10-15 14:00:39 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+2022-10-15 14:00:39 DEBUG AbstractFlushingEventListener:108 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2022-10-15 14:00:39 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2022-10-15 14:00:39 DEBUG Printer:106 - listing entities:
+2022-10-15 14:00:39 DEBUG Printer:113 - com.dse.hibernate.Student{code=RQ172027, phone=79567459, surname=Romero, name=Kevin, student_id=2, email=a1299r5@gmail.com}
+2022-10-15 14:00:39 DEBUG JDBCTransaction:147 - committed JDBC Connection
+2022-10-15 14:00:39 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:00:39 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:00:44 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:00:44 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:00:44 DEBUG SQL:111 - 
+    select
+        student0_.student_id as student1_0_,
+        student0_.code as code0_,
+        student0_.email as email0_,
+        student0_.name as name0_,
+        student0_.phone as phone0_,
+        student0_.surname as surname0_ 
+    from
+        students student0_
+2022-10-15 14:00:44 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+2022-10-15 14:00:44 DEBUG Loader:1197 - result row: EntityKey[com.dse.hibernate.Student#2]
+2022-10-15 14:00:44 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+2022-10-15 14:00:44 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:00:44 DEBUG StatefulPersistenceContext:860 - initializing non-lazy collections
+2022-10-15 14:00:44 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:00:44 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:01:14 DEBUG Loader:1873 - loading entity: [com.dse.hibernate.Student#1]
+2022-10-15 14:01:14 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:01:14 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:01:14 DEBUG SQL:111 - 
+    select
+        student0_.student_id as student1_0_0_,
+        student0_.code as code0_0_,
+        student0_.email as email0_0_,
+        student0_.name as name0_0_,
+        student0_.phone as phone0_0_,
+        student0_.surname as surname0_0_ 
+    from
+        students student0_ 
+    where
+        student0_.student_id=?
+2022-10-15 14:01:14 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+2022-10-15 14:01:14 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+2022-10-15 14:01:14 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:01:14 DEBUG StatefulPersistenceContext:860 - initializing non-lazy collections
+2022-10-15 14:01:14 DEBUG Loader:1904 - done entity load
+2022-10-15 14:01:14 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:01:14 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:01:21 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:01:37 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:01:54 DEBUG JDBCTransaction:82 - begin
+2022-10-15 14:01:54 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:01:54 DEBUG JDBCTransaction:87 - current autocommit status: false
+2022-10-15 14:01:54 DEBUG JDBCTransaction:134 - commit
+2022-10-15 14:01:54 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+2022-10-15 14:01:54 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+2022-10-15 14:01:54 DEBUG AbstractFlushingEventListener:108 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2022-10-15 14:01:54 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2022-10-15 14:01:54 DEBUG Printer:106 - listing entities:
+2022-10-15 14:01:54 DEBUG Printer:113 - com.dse.hibernate.Student{code=RQ172027, phone=, surname=, name=, student_id=2, email=kromero@alumno.udb.edu.sv}
+2022-10-15 14:01:54 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:01:54 DEBUG SQL:111 - 
+    update
+        students 
+    set
+        code=?,
+        email=?,
+        name=?,
+        phone=?,
+        surname=? 
+    where
+        student_id=?
+2022-10-15 14:01:54 DEBUG AbstractBatcher:66 - Executing batch size: 1
+2022-10-15 14:01:54 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:01:54 DEBUG JDBCTransaction:147 - committed JDBC Connection
+2022-10-15 14:01:54 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:01:54 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:01:59 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:01:59 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:01:59 DEBUG SQL:111 - 
+    select
+        student0_.student_id as student1_0_,
+        student0_.code as code0_,
+        student0_.email as email0_,
+        student0_.name as name0_,
+        student0_.phone as phone0_,
+        student0_.surname as surname0_ 
+    from
+        students student0_
+2022-10-15 14:01:59 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+2022-10-15 14:01:59 DEBUG Loader:1197 - result row: EntityKey[com.dse.hibernate.Student#2]
+2022-10-15 14:01:59 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+2022-10-15 14:01:59 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:01:59 DEBUG StatefulPersistenceContext:860 - initializing non-lazy collections
+2022-10-15 14:01:59 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:01:59 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:02:18 DEBUG Loader:1873 - loading entity: [com.dse.hibernate.Student#3]
+2022-10-15 14:02:18 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:02:18 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:02:18 DEBUG SQL:111 - 
+    select
+        student0_.student_id as student1_0_0_,
+        student0_.code as code0_0_,
+        student0_.email as email0_0_,
+        student0_.name as name0_0_,
+        student0_.phone as phone0_0_,
+        student0_.surname as surname0_0_ 
+    from
+        students student0_ 
+    where
+        student0_.student_id=?
+2022-10-15 14:02:18 DEBUG AbstractBatcher:426 - about to open ResultSet (open ResultSets: 0, globally: 0)
+2022-10-15 14:02:18 DEBUG AbstractBatcher:433 - about to close ResultSet (open ResultSets: 1, globally: 1)
+2022-10-15 14:02:18 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:02:18 DEBUG StatefulPersistenceContext:860 - initializing non-lazy collections
+2022-10-15 14:02:18 DEBUG Loader:1904 - done entity load
+2022-10-15 14:02:18 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:02:18 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+2022-10-15 14:02:26 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:02:26 DEBUG JDBCTransaction:82 - begin
+2022-10-15 14:02:26 DEBUG ConnectionManager:444 - opening JDBC connection
+2022-10-15 14:02:26 DEBUG JDBCTransaction:87 - current autocommit status: false
+2022-10-15 14:02:26 DEBUG JDBCTransaction:134 - commit
+2022-10-15 14:02:26 DEBUG AbstractFlushingEventListener:134 - processing flush-time cascades
+2022-10-15 14:02:26 DEBUG AbstractFlushingEventListener:177 - dirty checking collections
+2022-10-15 14:02:26 DEBUG AbstractFlushingEventListener:108 - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+2022-10-15 14:02:26 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2022-10-15 14:02:26 DEBUG Printer:106 - listing entities:
+2022-10-15 14:02:26 DEBUG Printer:113 - com.dse.hibernate.Student{code=RQ172027, phone=, surname=, name=, student_id=2, email=kromero@alumno.udb.edu.sv}
+2022-10-15 14:02:26 DEBUG AbstractBatcher:410 - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+2022-10-15 14:02:26 DEBUG SQL:111 - 
+    delete 
+    from
+        students 
+    where
+        student_id=?
+2022-10-15 14:02:26 DEBUG AbstractBatcher:66 - Executing batch size: 1
+2022-10-15 14:02:26 DEBUG AbstractBatcher:418 - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+2022-10-15 14:02:26 DEBUG JDBCTransaction:147 - committed JDBC Connection
+2022-10-15 14:02:26 DEBUG ConnectionManager:427 - aggressively releasing JDBC connection
+2022-10-15 14:02:26 DEBUG ConnectionManager:464 - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
